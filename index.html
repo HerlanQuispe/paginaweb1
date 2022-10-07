@@ -1,47 +1,340 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Formulario CSS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>complete responsive coffee shop website design</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
-
 <body>
+    
+<!-- header section starts  -->
 
-    <div class="contenedor-formulario contenedor">
-        <div class="imagen-formulario">
-            
-        </div>
+<header class="header">
 
-        <form class="formulario">
-            <div class="texto-formulario">
-                <h2>Bienvenido de nuevo</h2>
-                <p>Inicia sesión con tu cuenta</p>
-            </div>
-            <div class="input">
-                <label for="usuario">Usuario</label>
-                <input placeholder="Ingresa tu nombre" type="text" id="usuario">
-            </div>
-            <div class="input">
-                <label for="contraseña">Contraseña</label>
-                <input placeholder="Ingresa tu contraseña" type="password" id="contraseña">
-            </div>
-            <div class="password-olvidada">
-                <a href="#">¿Olvidaste tu contraseña?</a>
-            </div>
-            <div class="input">
-                <input type="submit" value="Login">
-            </div>
-        </form>
+    <a href="#" class="logo">
+        <img src="images/bg.jpg" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="#inicio">inicio</a>
+        <a href="#información">información</a>
+        <a href="#tipos">tipos</a>
+        <a href="#products">products</a>
+        <a href="#contacto">contacto</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
     </div>
 
-</body>
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
 
+    <div class="cart-items-container">
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-item-1.png" alt="">
+            <div class="content">
+                <h3>cart item 01</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-item-2.png" alt="">
+            <div class="content">
+                <h3>cart item 02</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-item-3.png" alt="">
+            <div class="content">
+                <h3>cart item 03</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-item-4.png" alt="">
+            <div class="content">
+                <h3>cart item 04</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <a href="#" class="btn">checkout now</a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="inicio">
+
+    <div class="content">
+        <h3>Empresa de Tecnical Multiservice Company</h3>
+        <p>Actualizamos nuestras empresa con nuevo logo y nombre empresarial.</p>
+        <a href="#" class="btn">get yours now</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="información">
+
+    <h1 class="heading"> <span>información</span> us </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/bg4.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Cámaras de vigilancias</h3>
+            <p>¿Qué son las cámaras de vigilancias?</p>
+            <p>Las cámaras de video vigilancia son equipos electrónicos que permiten monitorear lugares en los que no estamos necesariamente presentes. Por ejemplo: Uno puede salir de viaje y ver las cámaras que están en casa desde su celular o desde una computadora. Las Cámaras son parte de un circuito cerrado de televisión o CCTV, que viene del inglés: Closed Circuit Television. Éste es un conjunto de equipos que integra las cámaras con un grabador o DVR que permite vigilar o monitorear diferentes áreas del hogar, como la sala, cochera, cuarto de niños, patios, etc. Y en el caso de las empresas: la recepción, estacionamientos, oficinas, pasillos, etc.</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- menu section starts  -->
+
+<section class="menu" id="tipos">
+
+    <h1 class="heading"> our <span>tipos</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="img/bg9.jpg" alt="">
+            <h3>Cámara IP cubo</h3>
+            <div class="price">BOB. 600.00</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="img/bg10.jpg" alt="">
+            <h3>Cámara HDMI con audio</h3>
+            <div class="price">BOB. 25.00</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="img/bg11.jpg" alt="">
+            <h3>Cámara HDMI bala 1MP</h3>
+            <div class="price">BOB. 25.00</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="img/bg12.jpg" alt="">
+            <h3>Cámara IP cubo imou de 2MP wifi con audio incorporado</h3>
+            <div class="price">BOB. 25.00</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="img/bg13.jpg" alt="">
+            <h3>tasty and healty</h3>
+            <div class="price">BOB. 100.00</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="img/bg14.jpg" alt="">
+            <h3>Domo mini PTZ ip imou 2MP 1080 wifi P2P</h3>
+            <div class="price">BOB. 25.00</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- menu section ends -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> our <span>products</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="img/bg1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Videoporteros Análogos</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">BOB. 1,700.00</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="img/bg4.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Cercos eléctricos</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">BOB. 25.00</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="img/bg8.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Trabajos de Tapizados</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">BOB. 25.00</div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contacto">
+
+    <h1 class="heading"> <span>contacto</span> us </h1>
+
+    <div class="row">
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.788252261566!2d72.82321484621745!3d19.141690214227783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1629452077891!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        <form action="">
+            <h3>get in touch</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="name">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="number">
+            </div>
+            <input type="submit" value="contact now" class="btn">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- blogs section starts  -->
+
+
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="links">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">menu</a>
+        <a href="#">products</a>
+        <a href="#">review</a>
+        <a href="#">contact</a>
+        <a href="#">blogs</a>
+    </div>
+
+    <div class="credit">created by <span>mr. web designer</span> | all rights reserved</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
 </html>
